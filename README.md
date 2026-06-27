@@ -59,12 +59,6 @@ SaaS-Project/
 
 ---
 
-## 📸 Preview
-
-> Add screenshots here (optional but recommended)
-
----
-
 ## 👨‍💻 Author
 
 **Mumtaz Sanjar**
