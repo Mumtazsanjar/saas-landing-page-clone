@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SaaSify</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+<div class="logo">
+<div class="logo-icon">✓</div>
+<span>SaaSify</span>
+</div>
+
+<ul class="nav-links">
+
+<li><a href="#">Features</a></li>
+<li><a href="#">Pricing</a></li>
+<li><a href="#">Testimonials</a></li>
+
+<!-- DROPDOWN -->
+
+<li class="dropdown">
+<a href="#">Resources ▾</a>
+
+<ul class="dropdown-menu">
+<li><a href="#">Documentation</a></li>
+<li><a href="#">Blog</a></li>
+<li><a href="#">Help Center</a></li>
+</ul>
+
+</li>
+
+<li><a href="#">Contact</a></li>
+
+</ul>
+
+<div class="nav-right">
+
+<button id="theme-toggle">🌙</button>
+
+<a href="#" class="get-started-btn">Get Started</a>
+
+</div>
+</nav>
+
+
+<!-- PAGE 1 -->
+
+<section class="page1 reveal">
+
+<p class="tag">New with AI powered automation</p>
+
+<h1>
+Build better products, <br>
+<span>faster than ever</span>
+</h1>
+
+<p class="hero-text">
+The all-in-one platform that helps teams ship quality software.
+Automate workflows, collaborate seamlessly and scale with confidence.
+</p>
+
+<div class="buttons">
+
+<button class="btn primary-btn">
+ Start Free Trial
+</button>
+
+<button class="btn secondary-btn">
+ Watch Demo
+</button>
+
+</div>
+
+<hr class="line">
+
+<div class="stats">
+
+<div>
+<h2>10k+</h2>
+<p>Active users</p>
+</div>
+
+<div>
+<h2>99.9%</h2>
+<p>Uptime SLA</p>
+</div>
+
+<div>
+<h2>50+</h2>
+<p>Integrations</p>
+</div>
+
+<div>
+<h2>4.9★</h2>
+<p>User rating</p>
+</div>
+
+</div>
+
+
+<div class="dashboard">
+
+<img src="images/hd.png">
+
+</div>
+
+</section>
+
+
+
+<!-- PAGE 2 -->
+
+<section class="page2 reveal">
+
+<button class="feature-btn">Features</button>
+
+<h1 class="feature-title">
+Everything you need to ship faster
+</h1>
+
+<p class="feature-text">
+Powerful tools designed to streamline your workflow and boost team productivity.
+</p>
+
+
+<div class="feature-grid">
+
+
+<div class="card reveal">
+
+<div class="icon-box">
+⚡
+</div>
+
+<h3>Workflow Automation</h3>
+
+<p>
+Automate repetitive tasks and focus on what matters.
+Set up triggers, actions, and conditions without code.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon-box">
+👥
+</div>
+
+<h3>Real-time Collaboration</h3>
+
+<p>
+Work together seamlessly with live cursors, comments,
+and instant sync across all devices.
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="icon-box">📊</div>
+
+<h3>Advanced Analytics</h3>
+
+<p>
+Get deep insights into your team's performance
+with customizable dashboards and reports.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon-box">🛡</div>
+
+<h3>Enterprise Security</h3>
+
+<p>
+Bank-grade encryption, SSO, audit logs, and compliance certifications for peace of mind.
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="icon-box">🧩</div>
+
+<h3>API Integrations</h3>
+
+<p>
+Connect with 50+ tools you already use. REST API and webhooks for custom integrations.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon-box">⚙</div>
+
+<h3>24/7 Support</h3>
+
+<p>
+Get help when you need it with our dedicated support team and comprehensive documentation.
+</p>
+
+</div>
+
+</div>
+</section>
+
+
+<script src="script.js"></script>
+
+<script>
+
+function reveal(){
+var reveals=document.querySelectorAll(".reveal");
+
+for(var i=0;i<reveals.length;i++){
+
+var windowHeight=window.innerHeight;
+var elementTop=reveals[i].getBoundingClientRect().top;
+var elementVisible=100;
+
+if(elementTop < windowHeight - elementVisible){
+reveals[i].classList.add("active");
+}
+}
+}
+
+window.addEventListener("scroll",reveal);
+
+</script>
+
+
+
+
+
+<!-- mumtaz -->
+
+
+<section class="pricing">
+
+<div class="badge">Pricing</div>
+
+<h1>Simple, transparent pricing</h1>
+<p class="subtitle">Choose the plan that fits your needs. All plans include 14-day free trial.</p>
+
+<div class="pricing-wrapper">
+
+<!-- Toggle -->
+<div class="toggle">
+
+<span>Monthly</span>
+
+<label class="switch">
+<input type="checkbox" id="togglePrice">
+<span class="slider"></span>
+</label>
+
+<span>Yearly</span> <span class="save">Save 20%</span>
+
+</div>
+
+<div class="pricing-container">
+
+     <!-- Starter -->
+    <div class="pricing-card">
+
+      <h3>Starter</h3>
+
+      <h2 class="price">
+        <span class="month">$29<span>/month</span></span>
+         <span class="year">$23<span>/month</span></span>
+      </h2>
+
+     <p class="billing month-text">Billed monthly</p>
+     <p class="billing year-text">Billed annually ($276/year)</p>
+
+     <ul>
+          <li><i class="fa-solid fa-check"></i>   Up to 5 team members</li>
+          <li><i class="fa-solid fa-check"></i>   Basic analytics</li>
+          <li><i class="fa-solid fa-check"></i>   10 GB storage</li>
+          <li><i class="fa-solid fa-check"></i>   Email support</li>
+          <li><i class="fa-solid fa-xmark"></i>   API access</li>
+          <li><i class="fa-solid fa-xmark"></i>   Custom integrations</li>
+     </ul>
+
+     <button>Get started</button>
+
+    </div>
+
+
+   <!-- Pro -->
+
+   <div class="pricing-card pricing-active">
+
+      <div class="pricing-popular">Most Popular</div>
+
+      <h3>Pro</h3>
+
+     <h2 class="price">
+      <span class="month">$79<span>/month</span></span>
+      <span class="year">$63<span>/month</span></span>
+     </h2>
+
+     <p class="billing month-text">Billed monthly</p>
+     <p class="billing year-text">Billed annually ($756/year)</p>
+
+     <ul>
+          <li><i class="fa-solid fa-check"></i>   Up to 20 team members</li>
+          <li><i class="fa-solid fa-check"></i>   Advanced analytics</li>
+          <li><i class="fa-solid fa-check"></i>   100 GB storage</li>
+          <li><i class="fa-solid fa-check"></i>   Priority support</li>
+          <li><i class="fa-solid fa-check"></i>   API Access</li>
+          <li><i class="fa-solid fa-xmark"></i>   Custom integrations</li>
+     </ul>
+
+     <button>Get started</button>
+
+    </div>
+
+
+   <!-- Enterprise -->
+   <div class="pricing-card">
+
+      <h3>Enterprise</h3>
+
+      <h2 class="price">
+         <span class="month">$199<span>/month</span></span>
+         <span class="year">$159<span>/month</span></span>
+      </h2>
+
+      <p class="billing month-text">Billed monthly</p>
+      <p class="billing year-text">Billed annually ($1908/year)</p>
+
+     <ul>
+         <li><i class="fa-solid fa-check"></i>   Unlimited users</li>
+          <li><i class="fa-solid fa-check"></i>  Custom analytics</li>
+          <li><i class="fa-solid fa-check"></i>  Unlimited storage</li>
+          <li><i class="fa-solid fa-check"></i>  24/7 dedicated support</li>
+          <li><i class="fa-solid fa-check"></i>  API access</li>
+          <li><i class="fa-solid fa-check"></i>  Custom integrations</li>
+      </ul>
+
+     <button>Get started</button>
+
+      </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+  <!-- Testimonials Section -->
+
+  <section class="testimonials">
+
+     <div class="badge">Testimonials</div>
+
+         <h2>Loved by teams worldwide</h2>
+          <p>See what our customers have to say about their experience.</p>
+
+          <div class="testimonial-container">
+
+          <div class="testimonial">
+
+                <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+           </div>
+
+                   <p>"SaaSify has transformed how our team works. We've cut our deployment time by 60% and haven't looked back."</p>
+
+                      <div class="user">
+                          <div class="avatar">S</div>
+                        <div>
+                     <h4>Sarah Chen</h4>
+                     <span>CTO, TechFlow</span>
+           </div>
+       </div>
+
+    </div>
+
+    <div class="testimonial">
+
+          <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+           </div>
+
+          <p>"The automation features alone saved us 20+ hours per week. The ROI was evident within the first month."</p>
+
+          <div class="user">
+              <div class="avatar">M</div>
+             <div>
+                 <h4>Marcus Johnson</h4>
+                  <span>Head of Engineering, DataSync</span>
+              </div>
+          </div>
+
+  </div>
+
+       <div class="testimonial">
+
+          <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+           </div>
+
+            <p>"Best-in-class support and a product that actually delivers on its promise. Highly recommended."</p>
+
+            <div class="user">
+               <div class="avatar">E</div>
+              <div>
+                  <h4>Emily Rodriguez</h4>
+                   <span>Product Manager, CloudBase</span>
+              </div>
+          </div>
+
+       </div>
+
+</div>
+
+</section>
+<!-- <=====================zafar>============================ -->
+
+<div class="page-animation">
+
+<!-- your whole page content -->
+
+</div>
+
+<!-- CTA SECTION -->
+
+<section class="cta">
+
+<h1>Ready to transform your workflow?</h1>
+
+<p>Join thousands of teams already using SaaSify to build better products, faster.</p>
+
+<div class="cta-buttons">
+
+<button class="btn primary">
+Start free trial →
+</button>
+
+<a href="contact.html" class="btn outline">Contact sales</a>
+
+</div>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+<div class="footer-container">
+
+
+<div class="footer-col brand">
+
+<h3>☑ SaaSify</h3>
+
+<p>The modern platform for scaling your business.</p>
+
+<div class="socials">
+<span>𝕏</span>
+<span>G</span>
+<span>in</span>
+</div>
+
+</div>
+
+
+
+<div class="footer-col">
+
+<h4>PRODUCT</h4>
+
+<ul>
+<li>Features</li>
+<li>Pricing</li>
+<li>Integrations</li>
+<li>Changelog</li>
+</ul>
+
+</div>
+
+
+
+<div class="footer-col">
+
+<h4>COMPANY</h4>
+
+<ul>
+<li>About</li>
+<li>Blog</li>
+<li>Careers</li>
+<li>Contact</li>
+</ul>
+
+</div>
+
+
+
+<div class="footer-col">
+
+<h4>LEGAL</h4>
+
+<ul>
+<li>Privacy</li>
+<li>Terms</li>
+<li>Security</li>
+</ul>
+
+</div>
+
+
+
+<div class="footer-col subscribe">
+
+<h4>STAY UPDATED</h4>
+
+<p>Get the latest news and updates delivered to your inbox.</p>
+
+<div class="subscribe-box">
+
+<input type="email" placeholder="Enter your email">
+
+<button>Subscribe</button>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+
+<div class="footer-bottom">
+
+<p>© 2026 SaaSify. All rights reserved.</p>
+
+<div class="bottom-links">
+<span>Privacy Policy</span>
+<span>Terms of Service</span>
+</div>
+
+</div>
+
+
+</footer>
+
+
+
+
+
+
+</body>
+</html>
